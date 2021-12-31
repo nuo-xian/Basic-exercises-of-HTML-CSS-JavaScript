@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="cn-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食物菜谱</title>
+    <style>
+        body,html,div,ul,li,h1,h4,p,img {
+            padding:0;
+            margin:0;
+            scroll-behavior: smooth
+        }
+
+        ul {
+            list-style:none
+        }
+
+        h4 {
+            font-weight:normal
+        }
+
+        a {
+            color:#3a3a3a;
+            outline:none;
+            text-decoration:none
+        }
+
+        a:hover {
+            color:#e63023
+        }
+
+        img {
+            border:0;
+            vertical-align:top;
+            cursor: pointer;
+        }
+        
+        .main_l {
+            width:900px;
+            padding:10px 0;
+            overflow:hidden;
+            margin-left: 500px;
+            padding-top: 50px;
+            margin-top: -50px;
+        }
+
+        .main_l_ti {
+            text-align:center
+        }
+
+        .main_l_ti h1 {
+            color:#e63023;
+            font-size:23px;
+            margin-bottom:10px
+        }
+
+        .anlilist_u {
+            width:930px;
+        }
+
+        .anlilist_u li {
+            width:284px;
+            float:left;
+            border:solid 1px #ddd;
+            padding-bottom:5px;
+            margin:0 20px 20px 0
+        }
+        
+        .anlilist_u li h4 {
+            font-size:16px;
+            text-indent:10px;
+            margin:3px 0
+        }
+
+        .anlilist_u li .zh {
+            text-indent:0!important;
+            text-align:center!important
+        }
+
+        .top {
+            /* 设置宽度高度背景颜色 */
+            height: auto; /*高度改为自动高度*/
+            width:100%;
+            margin-left: 0;
+            background:rgb(189, 181, 181);
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+            margin-bottom: 5px
+        }
+
+        .top ul {
+            width: auto;
+            list-style-type: none;
+            white-space:nowrap;
+            overflow: hidden;
+            margin-left: 45%;
+            padding: 0
+        }
+
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:2%;  /* 两个li之间的距离*/
+            position: relative;
+            overflow: hidden
+        }
+ 
+        .top li a {
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 3px;
+            overflow: hidden;
+            text-decoration: none
+        }
+
+        .top li a:hover {
+            background-color: #111
+        }
+
+        .footer {
+             position: fixed;
+             bottom:50px;
+             left:860px;
+             text-align: center;  
+             width: 100%;
+             font-size: 16px;
+             letter-spacing: 1px
+        }
+    </style>
+</head>
+<body>
+    <audio class="audio-player" autoplay loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="top">
+        <center>
+            <ul>
+                <li><a href="#家常菜">家常菜</a></li>
+                <li><a href="#主食">主食</a></li>
+                <li><a href="#小吃">小吃</a></li>
+            </ul>
+        </center>
+    </div>
+
+    <div class="main_l" style="margin-top: 0px;" id="家常菜">
+        <div class="main_l_ti">
+			<h1>家常菜</h1>
+		</div>
+		<div class="anlilist">
+			<ul class="anlilist_u">
+				<li>
+					<a href="https://baike.baidu.com/item/%E8%A5%BF%E7%BA%A2%E6%9F%BF%E7%82%92%E9%B8%A1%E8%9B%8B" target="_blank"><img src="img/番茄炒蛋.jpg" width="284" height="200" alt="番茄炒蛋"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E8%A5%BF%E7%BA%A2%E6%9F%BF%E7%82%92%E9%B8%A1%E8%9B%8B" target="_blank">番茄炒蛋</a></h4>
+                    </a>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E6%B0%B4%E7%85%AE%E8%82%89%E7%89%87" target="_blank"><img src="img/水煮肉片.jpg" width="284" height="200" alt="水煮肉片"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E6%B0%B4%E7%85%AE%E8%82%89%E7%89%87" target="_blank">水煮肉片</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E7%BA%A2%E7%83%A7%E8%82%89/571767" target="_blank"><img src="img/红烧肉.jpg" width="284" height="200" alt="红烧肉"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E7%BA%A2%E7%83%A7%E8%82%89/571767" target="_blank">红烧肉</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E6%B2%B9%E7%84%96%E8%8C%84%E5%AD%90/2786280" target="_blank"><img src="img/油焖茄子.jpg" width="284" height="200" alt="油焖茄子"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E6%B2%B9%E7%84%96%E8%8C%84%E5%AD%90/2786280" target="_blank">油焖茄子</a></h4>
+				</li>
+                <li>
+					<a href="https://www.meishij.net/zuofa/niuroujiangbaotongcaigeng.html" target="_blank"><img src="img/牛肉酱爆通菜梗.jpg" width="284" height="200" alt="牛肉酱爆通菜梗"></a>
+					<h4 class="zh"><a href="https://www.meishij.net/zuofa/niuroujiangbaotongcaigeng.html" target="_blank">牛肉酱爆通菜梗</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E7%8E%89%E7%B1%B3%E5%B1%B1%E8%8D%AF%E6%8E%92%E9%AA%A8%E6%B1%A4/1081261" target="_blank"><img src="img/玉米山药排骨汤.jpg" width="284" height="200" alt="玉米山药排骨汤"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E7%8E%89%E7%B1%B3%E5%B1%B1%E8%8D%AF%E6%8E%92%E9%AA%A8%E6%B1%A4/1081261" target="_blank">玉米山药排骨汤</a></h4>
+				</li>
+                <li>
+					<a href="https://www.meishij.net/zuofa/rouwanhuntuntangmian.html" target="_blank"><img src="img/肉丸馄饨汤面.jpg" width="284" height="200" alt="肉丸馄饨汤面"></a>
+					<h4 class="zh"><a href="https://www.meishij.net/zuofa/rouwanhuntuntangmian.html" target="_blank">肉丸馄饨汤面</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E8%82%89%E6%9C%AB%E8%B1%86%E8%85%90/3503793" target="_blank"><img src="img/肉末豆腐.jpg" width="284" height="200" alt="肉末豆腐"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E8%82%89%E6%9C%AB%E8%B1%86%E8%85%90/3503793" target="_blank">肉末豆腐</a></h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <div class="main_l" id="主食">
+        <div class="main_l_ti">
+			<h1>主食</h1>
+		</div>
+		<div class="anlilist">
+			<ul class="anlilist_u">
+				<li>
+					<a href="https://baike.baidu.com/item/%E7%83%A4%E7%8E%89%E7%B1%B3/994445" target="_blank"><img src="img/烤玉米.jpg" width="284" height="200" alt="烤玉米"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E7%83%A4%E7%8E%89%E7%B1%B3/994445" target="_blank">烤玉米</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E8%8A%A5%E8%8F%9C%E7%82%92%E9%A5%AD/1106148" target="_blank"><img src="img/芥菜炒饭.jpg" width="284" height="200" alt="芥菜炒饭"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E8%8A%A5%E8%8F%9C%E7%82%92%E9%A5%AD/1106148" target="_blank">芥菜炒饭</a></h4>
+				</li>
+                <li>
+					<a href="https://home.meishichina.com/recipe-590454.html" target="_blank"><img src="img/时蔬肉丁糯米饭.jpg" width="284" height="200" alt="时蔬肉丁糯米饭"></a>
+					<h4 class="zh"><a href="https://home.meishichina.com/recipe-590454.html" target="_blank">时蔬肉丁糯米饭</a></h4>
+				</li>
+                <li>
+					<a href="https://www.meishij.net/zuofa/dabaozi_3.html" target="_blank"><img src="img/大包子.jpg" width="284" height="200" alt="大包子"></a>
+					<h4 class="zh"><a href="https://www.meishij.net/zuofa/dabaozi_3.html" target="_blank">大包子</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E6%B2%B9%E6%9D%A1/7696629" target="_blank"><img src="img/油条.jpg" width="284" height="200" alt="油条"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E6%B2%B9%E6%9D%A1/7696629" target="_blank">油条</a></h4>
+				</li>
+                <li>
+					<a href="https://m.meishichina.com/recipe/303238/" target="_blank"><img src="img/瘦肉葱饼.jpg" width="284" height="200" alt="瘦肉葱饼"></a>
+					<h4 class="zh"><a href="https://m.meishichina.com/recipe/303238/" target="_blank">瘦肉葱饼</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E9%A5%BA%E5%AD%90/28977" target="_blank"><img src="img/饺子.jpg" width="284" height="200" alt="饺子"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E9%A5%BA%E5%AD%90/28977" target="_blank">饺子</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E5%8F%A3%E8%A2%8B%E9%A5%BC/2570219" target="_blank"><img src="img/口袋饼.jpg" width="284" height="200" alt="口袋饼"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E5%8F%A3%E8%A2%8B%E9%A5%BC/2570219" target="_blank">口袋饼</a></h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+    <div class="main_l" id="小吃">
+        <div class="main_l_ti">
+			<h1>小吃</h1>
+		</div>
+		<div class="anlilist">
+			<ul class="anlilist_u">
+				<li>
+					<a href="https://home.meishichina.com/recipe-484119.html" target="_blank"><img src="img/小鱼馄饨.jpg" width="284" height="200" alt="小鱼馄饨"></a>
+					<h4 class="zh"><a href="https://home.meishichina.com/recipe-484119.html" target="_blank">小鱼馄饨</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E7%82%92%E7%B2%89%E4%B8%9D/6765412" target="_blank"><img src="img/炒粉王.jpg" width="284" height="200" alt="炒粉王"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E7%82%92%E7%B2%89%E4%B8%9D/6765412" target="_blank">炒粉王</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E8%84%B1%E9%AA%A8%E7%8C%AA%E8%B9%84/3187054" target="_blank"><img src="img/脱骨猪手.jpg" width="284" height="200" alt="脱骨猪手"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E8%84%B1%E9%AA%A8%E7%8C%AA%E8%B9%84/3187054" target="_blank">脱骨猪手</a></h4>
+				</li>
+                <li>
+					<a href="https://home.meishichina.com/recipe-589863.html" target="_blank"><img src="img/萝卜干煎蛋汤米粉.jpg" width="284" height="200" alt="萝卜干煎蛋汤米粉"></a>
+					<h4 class="zh"><a href="https://home.meishichina.com/recipe-589863.html" target="_blank">萝卜干煎蛋汤米粉</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E7%83%99%E9%A5%BC%E5%8D%B7%E5%B8%A6%E9%B1%BC/10189138" target="_blank"><img src="img/烙饼卷带鱼.jpg" width="284" height="200" alt="烙饼卷带鱼"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E7%83%99%E9%A5%BC%E5%8D%B7%E5%B8%A6%E9%B1%BC/10189138" target="_blank">烙饼卷带鱼</a></h4>
+				</li>
+                <li>
+					<a href="https://home.meishichina.com/recipe-485053.html" target="_blank"><img src="img/酥炸鳕鱼块.jpg" width="284" height="200" alt="酥炸鳕鱼块"></a>
+					<h4 class="zh"><a href="https://home.meishichina.com/recipe-485053.html" target="_blank">酥炸鳕鱼块</a></h4>
+				</li>
+                <li>
+					<a href="https://baike.baidu.com/item/%E9%85%B8%E8%BE%A3%E6%B1%A4/600651" target="_blank"><img src="img/酸辣汤.jpg" width="284" height="200" alt="酸辣汤"></a>
+					<h4 class="zh"><a href="https://baike.baidu.com/item/%E9%85%B8%E8%BE%A3%E6%B1%A4/600651" target="_blank">酸辣汤</a></h4>
+				</li>
+                <li>
+					<a href="https://home.meishichina.com/recipe-399887.html" target="_blank"><img src="img/酥脆豆腐卷.jpg" width="284" height="200" alt="酥脆豆腐卷"></a>
+					<h4 class="zh"><a href="https://home.meishichina.com/recipe-399887.html" target="_blank">酥脆豆腐卷</a></h4>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div class="footer" style="text-align:center;">
+        <font style="font-size:16px">
+            <a style="text-decoration:none;" href="#家常菜"><span>返回顶部</span></a>
+        </font>
+    </div>
+    <script type="text/javascript" color="0,0,0" opacity="1" count="80" zIndex="1" src="js/canvas-nest.js"></script>
+</body>
+</html>
