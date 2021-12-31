@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+            <!--
+                          .__               
+  ____  __ __  _______  __|__|____    ____  
+ /    \|  |  \/  _ \  \/  /  \__  \  /    \ 
+|   |  \  |  (  <_> >    <|  |/ __ \|   |  \
+|___|  /____/ \____/__/\_ \__(____  /___|  /
+     \/                  \/       \/     \/ 
+     
+        -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="author" content="nuoxian">
+    <meta name="format-detection" content="telphone=no,email=no">
+    <title>七律·长征</title>
+    <style type="text/css">
+        #box {
+            border: 2px #aaa solid; /* 设置边框 */
+            box-sizing: border-box; /* 设置内框 */
+            box-shadow: 0 0 3px 3px rgb(150, 150, 150); /* 设置边框阴影 */
+            width: 550px; /* 设置边框宽度 */
+            height: 850px; /* 设置边框高度 */
+            margin: auto; /* 将边框居中显示 */
+            margin-top: 45px; /* 边框顶部 */
+            text-align: center; /* 将文本居中显示 */
+        }
+
+        #box:hover {
+            box-shadow: 0 0 5px 5px rgb(150, 150, 150); /* 设置边框阴影 */
+        }
+
+        #box > p > a {
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+
+    <script type="text/javascript">
+        // 音乐
+        var isPlaying = false;
+        function play() {
+            var player = document.getElementById('audio'); // 寻找id为audio的容器
+            if (isPlaying) {
+                // 如果正在播放, 停止播放并停止读取此音乐文件
+                player.pause();
+                player.src = '';
+            } else {
+                player.src = 'tts.mp3';
+                player.play();
+            }
+            isPlaying = !isPlaying;
+        }
+
+        // 翻译
+        var gsfy = false;
+        function gstxt() {
+            if (gsfy) {
+                document.getElementById('gs1').innerText="红军不怕远征难，万水千山只等闲。";
+                document.getElementById('gs2').innerText="五岭逶迤腾细浪，乌蒙磅礴走泥丸。";
+                document.getElementById('gs3').innerText="金沙水拍云崖暖，大渡桥横铁索寒。";
+                document.getElementById('gs4').innerText="更喜岷山千里雪，三军过后尽开颜。";
+            } else {
+                document.getElementById('gs1').innerText="红军不怕万里长征路上的一切艰难困苦，把千山万水都看得极为平常。";
+                document.getElementById('gs2').innerText="绵延不断的五岭，在红军看来只不过是微波细浪在起伏，气势雄伟的乌蒙山，在红军眼里也不过是一颗泥丸。";
+                document.getElementById('gs3').innerText="金沙江浊浪滔天，拍击着高耸入云的峭壁悬崖，热气腾腾。大渡河险桥横架，晃动着凌空高悬的根根铁索，寒意阵阵。";
+                document.getElementById('gs4').innerText="更加令人喜悦的是踏上千里积雪的岷山，红军翻越过去以后个个笑逐颜开。";
+            }
+            gsfy = !gsfy;
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <a href="javascript:void(0);" onclick=""><img src="七律·长征.jpg" width="100%" alt="七律·长征"></a>
+        <br>
+        <br>
+        <br>
+        <h1>七律·长征</h1>
+        <p><a href="http://cpc.people.com.cn/GB/69112/70190/index.html" target="_blank">毛泽东</a><sup>[现代]</sup></p>
+        <br>
+        <p id="gs1">红军不怕远征难，万水千山只等闲。</p>
+        <p id="gs2">五岭逶迤腾细浪，乌蒙磅礴走泥丸。</p>
+        <p id="gs3">金沙水拍云崖暖，大渡桥横铁索寒。</p>
+        <p id="gs4">更喜岷山千里雪，三军过后尽开颜。</p>
+        <br>
+        <br>
+        <br>
+        <audio id='audio' src=""></audio>
+        <a href="javascript:void(0);" onclick='gstxt();'><img src="翻译.svg" width="23px" alt="翻译原文"></a>
+        <a href="javascript:void(0);" onclick='play();'><img src="声音.svg" width="23px" alt="播放原文"></a>
+    </div>
+    <div class="footer">
+        &copy; 2021-2021 nuoxian 版权所有
+    </div>
+</body>
+</html>
